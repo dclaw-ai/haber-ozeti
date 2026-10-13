@@ -6,9 +6,8 @@
   --line: #e7e4dd;
   --accent: #b4462b;
   --tr: #2f6f6a;
-  --tag-ai: #6a4bc4;
-  --tag-tech: #1f6fb2;
-  --tag-world: #2f7d4a;
+  --tag-tech: #6a4bc4;
+  --tag-politics: #2f7d4a;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
@@ -19,9 +18,8 @@
     --line: #2d2c29;
     --accent: #e8795c;
     --tr: #6cc3bb;
-    --tag-ai: #a58cf0;
-    --tag-tech: #6aaee8;
-    --tag-world: #72c48e;
+    --tag-tech: #a58cf0;
+    --tag-politics: #72c48e;
   }
 }
 * { box-sizing: border-box; }
@@ -57,9 +55,8 @@ section > h2 {
   font-size: 13px; letter-spacing: .1em; text-transform: uppercase; margin: 0 0 12px; color: var(--muted);
 }
 section > h2::before { content: ""; width: 10px; height: 10px; border-radius: 3px; background: var(--c); }
-#ai { --c: var(--tag-ai); }
 #tech { --c: var(--tag-tech); }
-#world { --c: var(--tag-world); }
+#politics { --c: var(--tag-politics); }
 
 article { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; margin-bottom: 12px; }
 article h3 { font-size: 18px; line-height: 1.35; margin: 0 0 6px; }
