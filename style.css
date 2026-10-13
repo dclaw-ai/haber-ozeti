@@ -1,11 +1,11 @@
 /* Soft, low-contrast reading theme */
 :root {
-  --bg: #f3efe6;
-  --surface: #f9f6ef;
-  --text: #33312c;
-  --muted: #7a756b;
-  --line: #e2dccf;
-  --accent: #9a5b43;
+  --bg: #e9e0cd;
+  --surface: #e2d8c3;
+  --text: #3b3529;
+  --muted: #776d5c;
+  --line: #d3c7af;
+  --accent: #8e5038;
   --tag-tech: #7a6aa8;
   --tag-politics: #6b8a5c;
   --img-filter: none;
