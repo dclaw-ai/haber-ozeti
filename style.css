@@ -1,0 +1,79 @@
+:root {
+  --bg: #fbfaf7;
+  --surface: #ffffff;
+  --text: #1c1b19;
+  --muted: #6b6862;
+  --line: #e7e4dd;
+  --accent: #b4462b;
+  --tr: #2f6f6a;
+  --tag-ai: #6a4bc4;
+  --tag-tech: #1f6fb2;
+  --tag-world: #2f7d4a;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #141412;
+    --surface: #1c1c1a;
+    --text: #ecebe6;
+    --muted: #9b988f;
+    --line: #2d2c29;
+    --accent: #e8795c;
+    --tr: #6cc3bb;
+    --tag-ai: #a58cf0;
+    --tag-tech: #6aaee8;
+    --tag-world: #72c48e;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+}
+.wrap { max-width: 680px; margin: 0 auto; padding: 28px 16px 64px; }
+
+header { border-bottom: 1px solid var(--line); padding-bottom: 18px; margin-bottom: 8px; }
+.brand { font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); font-weight: 700; margin: 0; }
+h1 { font-size: 30px; line-height: 1.2; margin: 6px 0 4px; font-weight: 750; }
+.meta { color: var(--muted); font-size: 14px; margin: 0; }
+
+.notice {
+  margin: 18px 0 0; padding: 10px 14px; border-radius: 10px;
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+  color: var(--text); font-size: 14px;
+}
+
+nav.jump { display: flex; gap: 8px; flex-wrap: wrap; margin: 18px 0 6px; }
+nav.jump a {
+  font-size: 14px; text-decoration: none; color: var(--text);
+  border: 1px solid var(--line); border-radius: 999px; padding: 4px 12px; background: var(--surface);
+}
+
+section { margin-top: 34px; scroll-margin-top: 12px; }
+section > h2 {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 13px; letter-spacing: .1em; text-transform: uppercase; margin: 0 0 12px; color: var(--muted);
+}
+section > h2::before { content: ""; width: 10px; height: 10px; border-radius: 3px; background: var(--c); }
+#ai { --c: var(--tag-ai); }
+#tech { --c: var(--tag-tech); }
+#world { --c: var(--tag-world); }
+
+article { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; margin-bottom: 12px; }
+article h3 { font-size: 18px; line-height: 1.35; margin: 0 0 6px; }
+article p { margin: 0 0 10px; }
+.src { font-size: 14px; color: var(--muted); }
+.src a { color: var(--accent); text-decoration: none; font-weight: 600; }
+.src a:hover { text-decoration: underline; }
+.tr { color: var(--tr); font-size: .92em; }
+
+footer { margin-top: 48px; border-top: 1px solid var(--line); padding-top: 18px; }
+footer h2 { font-size: 13px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin: 0 0 10px; }
+footer ul { list-style: none; padding: 0; margin: 0; }
+footer li { padding: 6px 0; border-bottom: 1px solid var(--line); }
+footer li a { color: var(--text); text-decoration: none; }
+footer li a:hover { color: var(--accent); }
+footer .back { display: inline-block; margin-bottom: 12px; color: var(--accent); text-decoration: none; font-weight: 600; }
+.small { color: var(--muted); font-size: 13px; margin-top: 18px; }
