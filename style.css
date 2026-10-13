@@ -6,7 +6,6 @@
   --muted: #7a756b;
   --line: #e2dccf;
   --accent: #9a5b43;
-  --tr: #5f7f6e;
   --tag-tech: #7a6aa8;
   --tag-politics: #6b8a5c;
   --img-filter: none;
@@ -19,7 +18,6 @@
     --muted: #8f897e;
     --line: #34322e;
     --accent: #cf9478;
-    --tr: #8fb39f;
     --tag-tech: #a99bd1;
     --tag-politics: #9dbb8c;
     --img-filter: brightness(.85) saturate(.9);
@@ -27,7 +25,7 @@
 }
 :root[data-theme="dark"] {
   --bg: #1d1c1a; --surface: #242320; --text: #d6d1c6; --muted: #8f897e; --line: #34322e;
-  --accent: #cf9478; --tr: #8fb39f; --tag-tech: #a99bd1; --tag-politics: #9dbb8c;
+  --accent: #cf9478; --tag-tech: #a99bd1; --tag-politics: #9dbb8c;
   --img-filter: brightness(.85) saturate(.9);
 }
 * { box-sizing: border-box; }
@@ -62,26 +60,24 @@ section > h2::before { content: ""; width: 8px; height: 8px; border-radius: 50%;
 #tech { --c: var(--tag-tech); }
 #politics { --c: var(--tag-politics); }
 
-article { padding: 20px 0; border-bottom: 1px solid var(--line); }
+article { padding: 18px 0; border-bottom: 1px solid var(--line); }
 article:last-child { border-bottom: 0; }
-.row { display: grid; grid-template-columns: 1fr 92px; gap: 16px; align-items: start; }
-article h3 { font-size: 20px; line-height: 1.35; margin: 0 0 8px; font-weight: 600; }
-article p { margin: 0 0 10px; }
-figure { margin: 4px 0 0; }
+article h3 { font-size: 19px; line-height: 1.3; margin: 0 0 6px; font-weight: 600; }
+article p { margin: 0 0 8px; font-size: 17px; line-height: 1.55; }
+article::after { content: ""; display: block; clear: both; }
+figure { float: right; margin: 4px 0 6px 14px; }
 figure img {
-  display: block; width: 92px; height: 92px; object-fit: cover; border-radius: 12px;
+  display: block; width: 76px; height: 76px; object-fit: cover; border-radius: 10px;
   background: var(--line); filter: var(--img-filter);
 }
 .src { font-size: 14px; color: var(--muted); }
 .src a { color: var(--accent); text-decoration: none; font-weight: 500; }
 .src a:hover { text-decoration: underline; }
-.credit { display: block; font-size: 11px; line-height: 1.4; color: var(--muted); margin-top: 6px; opacity: .85; }
+.credit { display: block; clear: both; font-size: 11px; line-height: 1.4; color: var(--muted); margin-top: 6px; opacity: .85; }
 .credit a { color: inherit; }
-.tr { color: var(--tr); font-style: italic; }
 
 @media (min-width: 560px) {
-  .row { grid-template-columns: 1fr 128px; gap: 22px; }
-  figure img { width: 128px; height: 128px; }
+  figure img { width: 96px; height: 96px; }
 }
 
 footer { margin-top: 48px; border-top: 1px solid var(--line); padding-top: 18px; font-size: 15px; }
