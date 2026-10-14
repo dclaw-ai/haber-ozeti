@@ -125,3 +125,12 @@ article[id] { scroll-margin-top: 12px; }
 .weekly-link:hover { background: var(--surface); }
 .days { color: var(--muted); }
 .days a { color: inherit; }
+
+/* 👍 on AI idea cards: opens a prefilled issue in the private likes inbox */
+.idea-card .src { display: flex; align-items: center; flex-wrap: wrap; gap: 4px 6px; }
+.like {
+  margin-left: auto; padding: 3px 12px; border-radius: 999px;
+  border: 1px solid var(--line); background: var(--bg); color: var(--text);
+  text-decoration: none; font-size: 14px; line-height: 1.6; white-space: nowrap;
+}
+.like:hover { border-color: var(--tag-idea); }
