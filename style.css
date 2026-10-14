@@ -8,6 +8,7 @@
   --accent: #8e5038;
   --tag-tech: #7a6aa8;
   --tag-politics: #6b8a5c;
+  --tag-idea: #a7802f;
   --img-filter: none;
 }
 @media (prefers-color-scheme: dark) {
@@ -20,12 +21,13 @@
     --accent: #cf9478;
     --tag-tech: #a99bd1;
     --tag-politics: #9dbb8c;
+    --tag-idea: #d4b26a;
     --img-filter: brightness(.85) saturate(.9);
   }
 }
 :root[data-theme="dark"] {
   --bg: #1d1c1a; --surface: #242320; --text: #d6d1c6; --muted: #8f897e; --line: #34322e;
-  --accent: #cf9478; --tag-tech: #a99bd1; --tag-politics: #9dbb8c;
+  --accent: #cf9478; --tag-tech: #a99bd1; --tag-politics: #9dbb8c; --tag-idea: #d4b26a;
   --img-filter: brightness(.85) saturate(.9);
 }
 * { box-sizing: border-box; }
@@ -59,6 +61,14 @@ section > h2 {
 section > h2::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--c); }
 #tech { --c: var(--tag-tech); }
 #politics { --c: var(--tag-politics); }
+#idea { --c: var(--tag-idea); }
+
+/* AI Idea of the Day: one highlighted card */
+.idea-card {
+  background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--tag-idea);
+  border-radius: 12px; padding: 16px 16px 14px; margin-top: 10px;
+}
+.idea-card:last-child { border-bottom: 1px solid var(--line); }
 
 article { padding: 18px 0; border-bottom: 1px solid var(--line); }
 article:last-child { border-bottom: 0; }
