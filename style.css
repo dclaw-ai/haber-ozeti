@@ -62,6 +62,7 @@ section > h2::before { content: ""; width: 8px; height: 8px; border-radius: 50%;
 #tech { --c: var(--tag-tech); }
 #politics { --c: var(--tag-politics); }
 #idea { --c: var(--tag-idea); }
+#week { --c: var(--accent); }
 
 /* AI Idea of the Day: one highlighted card */
 .idea-card {
