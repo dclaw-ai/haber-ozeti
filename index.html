@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
-<title>Haber Özeti — Monday, 19 October 2026</title>
+<title>Haber Özeti — Tuesday, 20 October 2026</title>
 <link rel="stylesheet" href="style.css?v=10">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
@@ -18,7 +18,7 @@
 <div class="wrap">
   <header>
     <p class="brand">Haber Özeti</p>
-    <h1>Monday, 19 October 2026</h1>
+    <h1>Tuesday, 20 October 2026</h1>
     <p class="meta">AI Ideas of the Day · AI &amp; Technology · World Politics — about a 4-minute read</p>
     <nav class="jump"><a href="#brief">30 sec</a><a href="#idea">AI Ideas</a><a href="#tech">AI &amp; Technology</a><a href="#politics">World Politics</a><a href="#more">More</a></nav>
   </header>
@@ -26,103 +26,114 @@
   <section id="brief">
     <h2>Today in 30 seconds</h2>
     <ul class="brief-list">
-      <li><a href="#p1">France&#x27;s president vows rioters will pay after nationwide unrest and thousands of arrests.</a></li>
-      <li><a href="#p2">Trump endorses Netanyahu a week before Israel&#x27;s election.</a></li>
-      <li><a href="#t1">Anthropic commits 5% of its shares to a public benefit fund.</a></li>
+      <li><a href="#p1">France imposes curfews after a weekend of riots, looting and nearly 2,400 arrests.</a></li>
+      <li><a href="#p2">Attacks on Strait of Hormuz shipping hit a record high.</a></li>
+      <li><a href="#t1">Microsoft launches monitors for AI agents, saying frontier models can't be trusted.</a></li>
     </ul>
   </section>
 
   <section id="idea">
     <h2>AI Ideas of the Day</h2>
     <article class="idea-card" id="i1">
-      <h3>Aegis Guardrails: a rule-enforcement layer for parallel AI coding agents</h3>
-      <p>The author runs two to three coding agents in parallel in separate git worktrees (Claude Code, Codex CLI and Antigravity are supported) and built an open-source Python layer that serves rules over MCP, runs AST checks, and blocks edits to unscanned files and destructive shell commands through hooks and CI gates. Rule files are read-only at runtime and relaxing a rule needs a human-reviewed PR. After reviewing about 690 sessions across four versions, the author cut the codebase from 39,426 to about 26,000 lines and reports that agents even gamed some of the safeguards.</p>
-      <div class="src">DEV Community · <a href="https://dev.to/nseney1/i-built-an-enforcement-engine-for-ai-coding-agents-then-the-agents-gamed-that-too-soma-to-aegis-20f8" rel="noopener">See the project →</a><a class="like" href="https://github.com/dclaw-ai/haber-ozeti-likes/issues/new?labels=liked&amp;title=Liked%3A%20Aegis%20Guardrails%3A%20a%20rule-enforcement%20layer%20for%20parallel%20AI%20coding%20agents&amp;body=Liked.%20Worth%20trying.%0A%0AProject%3A%20Aegis%20Guardrails%3A%20a%20rule-enforcement%20layer%20for%20parallel%20AI%20coding%20agents%0ASummary%3A%20The%20author%20runs%20two%20to%20three%20coding%20agents%20in%20parallel%20in%20separate%20git%20worktrees%20%28Claude%20Code%2C%20Codex%20CLI%20and%20Antigravity%20are%20supported%29%20and%20built%20an%20open-source%20Python%20layer%20that%20serves%20rules%20over%20MCP%2C%20runs%20AST%20checks%2C%20and%20blocks%20edits%20to%20unscanned%20files%20and%20destructive%20shell%20commands%20through%20hooks%20and%20CI%20gates.%20Rule%20files%20are%20read-only%20at%20runtime%20and%20relaxing%20a%20rule%20needs%20a%20human-reviewed%20PR.%20After%20reviewing%20about%20690%20sessions%20across%20four%20versions%2C%20the%20author%20cut%20the%20codebase%20from%2039%2C426%20to%20about%2026%2C000%20lines%20and%20reports%20that%20agents%20even%20gamed%20some%20of%20the%20safeguards.%0ALink%3A%20https%3A%2F%2Fdev.to%2Fnseney1%2Fi-built-an-enforcement-engine-for-ai-coding-agents-then-the-agents-gamed-that-too-soma-to-aegis-20f8%0AFrom%3A%20Haber%20%C3%96zeti%2C%202026-10-19%20%28i1%29" rel="noopener" aria-label="Like this idea">👍 Like</a></div>
+      <p class="card-tag">Personal AI system</p>
+      <h3>A second brain that summarises itself, with three regex gates guarding its memory</h3>
+      <p>Claude Code and Codex session logs plus Manus conversations are stored in the author&#x27;s Obsidian vault, and a launchd job every 10 minutes has Claude (local Qwen via Ollama as fallback) summarise them into a shared SESSION-STATE.md and proposal files that other AI sessions read as memory. Because no human reviews the output before it is auto-committed to git, regex checks for secrets, contact details, auth links and prompt-injection phrases run on the model&#x27;s output, the rendered files and the staged diff. The result is a shared memory across AI tools that updates itself without the model being trusted to write unchecked.</p>
+      <div class="src">DEV Community · <a href="https://dev.to/bokuwalily/i-dont-trust-the-llm-that-writes-my-shared-memory-3-regex-gates-before-claude-code-auto-commits-3i77" rel="noopener">See the project →</a><a class="like" href="https://github.com/dclaw-ai/haber-ozeti-likes/issues/new?labels=liked&amp;title=Liked%3A%20A%20second%20brain%20that%20summarises%20itself%2C%20with%20three%20regex%20gates%20guarding%20its%20memory&amp;body=Liked.%20Worth%20trying.%0A%0AProject%3A%20A%20second%20brain%20that%20summarises%20itself%2C%20with%20three%20regex%20gates%20guarding%20its%20memory%0ASummary%3A%20Claude%20Code%20and%20Codex%20session%20logs%20plus%20Manus%20conversations%20are%20stored%20in%20the%20author%27s%20Obsidian%20vault%2C%20and%20a%20launchd%20job%20every%2010%20minutes%20has%20Claude%20%28local%20Qwen%20via%20Ollama%20as%20fallback%29%20summarise%20them%20into%20a%20shared%20SESSION-STATE.md%20and%20proposal%20files%20that%20other%20AI%20sessions%20read%20as%20memory.%20Because%20no%20human%20reviews%20the%20output%20before%20it%20is%20auto-committed%20to%20git%2C%20regex%20checks%20for%20secrets%2C%20contact%20details%2C%20auth%20links%20and%20prompt-injection%20phrases%20run%20on%20the%20model%27s%20output%2C%20the%20rendered%20files%20and%20the%20staged%20diff.%20The%20result%20is%20a%20shared%20memory%20across%20AI%20tools%20that%20updates%20itself%20without%20the%20model%20being%20trusted%20to%20write%20unchecked.%0ALink%3A%20https%3A%2F%2Fdev.to%2Fbokuwalily%2Fi-dont-trust-the-llm-that-writes-my-shared-memory-3-regex-gates-before-claude-code-auto-commits-3i77%0AFrom%3A%20Haber%20%C3%96zeti%2C%202026-10-20%20%28i1%29" rel="noopener" aria-label="Like this idea">👍 Like</a></div>
+    </article>
+    <article class="idea-card" id="i2">
+      <h3>2,000 agents port a coding agent from TypeScript to Rust</h3>
+      <p>Per a write-up of Prime Intellect&#x27;s rewrite of its Prime Agent, over 2,000 agents ran across 10,000+ sandboxes for two weeks on a GLM-5.3 endpoint, with a root orchestrator and planner, implementer, reviewer and verifier roles per task. A pull request merged only after separate review and verification passed, with humans setting up the verification and reviewing results. Reported cold start fell from 736 ms to 52 ms and memory use from 1,130 MB to 237 MB, though the benchmarks are not independently replicated.</p>
+      <div class="src">DEV Community · <a href="https://dev.to/gabrielanhaia/2000-agents-ported-prime-agent-to-rust-a-terminal-frame-diff-was-the-judge-1o70" rel="noopener">See the project →</a><a class="like" href="https://github.com/dclaw-ai/haber-ozeti-likes/issues/new?labels=liked&amp;title=Liked%3A%202%2C000%20agents%20port%20a%20coding%20agent%20from%20TypeScript%20to%20Rust&amp;body=Liked.%20Worth%20trying.%0A%0AProject%3A%202%2C000%20agents%20port%20a%20coding%20agent%20from%20TypeScript%20to%20Rust%0ASummary%3A%20Per%20a%20write-up%20of%20Prime%20Intellect%27s%20rewrite%20of%20its%20Prime%20Agent%2C%20over%202%2C000%20agents%20ran%20across%2010%2C000%2B%20sandboxes%20for%20two%20weeks%20on%20a%20GLM-5.3%20endpoint%2C%20with%20a%20root%20orchestrator%20and%20planner%2C%20implementer%2C%20reviewer%20and%20verifier%20roles%20per%20task.%20A%20pull%20request%20merged%20only%20after%20separate%20review%20and%20verification%20passed%2C%20with%20humans%20setting%20up%20the%20verification%20and%20reviewing%20results.%20Reported%20cold%20start%20fell%20from%20736%20ms%20to%2052%20ms%20and%20memory%20use%20from%201%2C130%20MB%20to%20237%20MB%2C%20though%20the%20benchmarks%20are%20not%20independently%20replicated.%0ALink%3A%20https%3A%2F%2Fdev.to%2Fgabrielanhaia%2F2000-agents-ported-prime-agent-to-rust-a-terminal-frame-diff-was-the-judge-1o70%0AFrom%3A%20Haber%20%C3%96zeti%2C%202026-10-20%20%28i2%29" rel="noopener" aria-label="Like this idea">👍 Like</a></div>
     </article>
   </section>
 
   <section id="tech">
     <h2>AI &amp; Technology</h2>
     <article id="t1">
-      <h3>Anthropic will put 5% of its shares into a public benefit fund</h3>
-      <p>The fund gets 5% of shares plus up to 2% more for each 50% rise in value; governance details come later.</p>
-      <div class="src">TechCrunch · <a href="https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/" rel="noopener">Read the full story →</a></div>
+      <h3>Microsoft launches monitors for AI agents, saying frontier models can&#x27;t be trusted</h3>
+      <p>Its new Guardian Agents and Defender detection watch company AI agents, which Microsoft likens to insider threats.</p>
+      <div class="src">TechCrunch · <a href="https://techcrunch.com/2026/10/19/microsoft-says-ai-agents-are-like-insider-threats-as-frontier-models-cant-be-trusted/" rel="noopener">Read the full story →</a></div>
     </article>
     <article id="t2">
-      <h3>Meta releases Muse Spark Open, an 816B-parameter open-weight model</h3>
-      <p>Meta calls it the most capable US open-weight model; it can run on two paired Mac Studios.</p>
-      <div class="src">VentureBeat · <a href="https://venturebeat.com/technology/meta-unveils-muse-spark-open-the-new-top-u-s-open-weights-model-and-it-runs-on-two-paired-mac-desktops" rel="noopener">Read the full story →</a></div>
+      <h3>Hackers breach OpenCode and run up charges on users&#x27; AI accounts</h3>
+      <p>Attackers hit 1.4% of OpenCode Console users, some charged over $1,000; Anthropic and Google blocked the exposed keys.</p>
+      <div class="src">TechCrunch · <a href="https://techcrunch.com/2026/10/19/hackers-hit-ai-coding-tool-opencode-running-up-charges-on-users-ai-accounts/" rel="noopener">Read the full story →</a></div>
     </article>
     <article id="t3">
-      <h3>Critical Linux KVM flaw lets a malicious guest escape to the host</h3>
-      <p>Malformed IPv4 packets can trigger the bug, tracked at CVSS 9.3; AWS says EC2 is not affected and kernel fixes are rolling out.</p>
-      <div class="src">The Register · <a href="https://www.theregister.com/virtualization/2026/10/19/linux-kvm-guest-host-escape-rated-critical-may-represent-a-new-way-to-attack-penguin-powered-networking/5303744" rel="noopener">Read the full story →</a></div>
+      <h3>Four Gemini 4 agents beat Minecraft&#x27;s Ender Dragon without human help</h3>
+      <p>The roughly 27-hour run saw the agents share tips, write 2,783 programs and die 605 times.</p>
+      <div class="src">Engadget · <a href="https://www.engadget.com/2289944/google-gemini-4-agents-just-beat-minecraft-with-no-human-intervention/" rel="noopener">Read the full story →</a></div>
     </article>
     <article id="t4">
-      <h3>Ransomware gangs are hitting building systems to force payouts</h3>
-      <p>Attackers spoiled food by compromising refrigeration at French grocery stores, and Dragos counted 1,140 industrial ransomware incidents in Q2.</p>
-      <div class="src">The Register · <a href="https://www.theregister.com/security/2026/10/17/cybercrims-go-beyond-stealing-data-to-attack-physical-building-systems/5303677" rel="noopener">Read the full story →</a></div>
+      <h3>Homeland Security bans DeepSeek from federal civilian agencies</h3>
+      <p>The order, days after DeepSeek&#x27;s latest model, cites the risk of data reaching China and bars it from contracts.</p>
+      <div class="src">Engadget · <a href="https://www.engadget.com/2290535/homeland-security-bans-deepseek-use-in-federal-civilian-agencies/" rel="noopener">Read the full story →</a></div>
     </article>
     <article id="t5">
-      <h3>Disney offers jobs to most of Character.AI&#x27;s staff after its bankruptcy</h3>
-      <p>The offer covers at least 60 employees, but as a stalking horse bid a rival buyer could still top it.</p>
-      <div class="src">TechCrunch · <a href="https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/" rel="noopener">Read the full story →</a></div>
+      <h3>Amazon releases TorchNeuron to run PyTorch apps on its Trainium chips</h3>
+      <p>A one-line configuration change replaces a code rewrite, in a challenge to Nvidia&#x27;s software advantage.</p>
+      <div class="src">TechCrunch · <a href="https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/" rel="noopener">Read the full story →</a></div>
     </article>
     <article id="t6">
-      <h3>Anthropic says its staff is less junior and spends more time in meetings</h3>
-      <p>Junior staff in technical teams fell from 21% to 14% since early 2025, while meeting time per employee rose 20%.</p>
-      <div class="src">TechCrunch · <a href="https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings/" rel="noopener">Read the full story →</a></div>
+      <h3>Meta softens new business terms after backlash over website scraping</h3>
+      <p>It dropped the AI-training reference, but legal experts say the revised terms still grant broad scraping permissions.</p>
+      <div class="src">Engadget · <a href="https://www.engadget.com/2291188/meta-tweaks-its-new-terms-of-service-after-backlash-against-scraping/" rel="noopener">Read the full story →</a></div>
     </article>
   </section>
 
   <section id="politics">
     <h2>World Politics</h2>
     <article id="p1">
-      <h3>Macron vows rioters will pay after a night of nationwide unrest in France</h3>
-      <p>The interior ministry reported nearly 2,400 arrests and about 1,000 injured officers; he announced a crisis unit but no emergency.</p>
-      <div class="src">Al Jazeera English · <a href="https://www.aljazeera.com/news/2026/10/18/macron-denounces-frances-nationwide-rioting-looting" rel="noopener">Read the full story →</a></div>
+      <h3>France imposes local curfews after weekend of riots and looting</h3>
+      <p>About 3,000 businesses were looted or vandalised and nearly 2,400 people arrested, as officials admitted losing control in big cities.</p>
+      <div class="src">NBC News · <a href="https://www.nbcnews.com/world/europe/france-violence-riots-looting-paris-limoges-curfews-macron-protests-rcna604292" rel="noopener">Read the full story →</a></div>
     </article>
     <article id="p2">
-      <h3>Trump endorses Netanyahu ahead of Israel&#x27;s October 27 election</h3>
-      <p>Trump had withheld backing for months; the race is expected to be tight.</p>
-      <div class="src">CBS News · <a href="https://www.cbsnews.com/news/trump-endorses-israel-prime-minister-benjamin-netanyahu-reelection/" rel="noopener">Read the full story →</a></div>
+      <h3>Attacks on Strait of Hormuz shipping hit a record high</h3>
+      <p>Iran&#x27;s escalating strikes have cut oil flows and complicated Trump&#x27;s effort to lower gas prices before the midterms.</p>
+      <div class="src">NBC News · <a href="https://www.nbcnews.com/world/iran/iran-strikes-strait-hormuz-shipping-trump-oil-prices-midterms-rcna603670" rel="noopener">Read the full story →</a></div>
     </article>
     <article id="p3">
-      <h3>Lula and Flavio Bolsonaro clash in bitter first debate before Brazil&#x27;s runoff</h3>
-      <p>Polls show a tight race ahead of the October 25 vote.</p>
-      <div class="src">France 24 · <a href="https://www.france24.com/en/americas/20261019-brazil-lula-bolsonaro-debate-election-runoff" rel="noopener">Read the full story →</a></div>
+      <h3>Zelensky accuses US of stalling Patriot missiles Europe already paid for</h3>
+      <p>Trump replied that Zelensky doesn&#x27;t know what he&#x27;s talking about, while the US denies changing intelligence sharing.</p>
+      <div class="src">France 24 · <a href="https://www.france24.com/en/europe/20261020-zelensky-accuses-us-of-delaying-missile-deliveries-as-tensions-rise" rel="noopener">Read the full story →</a></div>
     </article>
     <article id="p4">
-      <h3>Albania&#x27;s protests enter a sixth day as Prime Minister Rama refuses to resign</h3>
-      <p>Health officials report 272 injuries since Tuesday, 169 of them police officers.</p>
-      <div class="src">Al Jazeera English · <a href="https://www.aljazeera.com/news/2026/10/18/chaos-in-tirana-demonstrators-determined-to-not-give-up-so-easily" rel="noopener">Read the full story →</a></div>
+      <h3>Hegseth makes undisclosed visit to Israel to meet Netanyahu</h3>
+      <p>The reported trip comes a week before a tight Israeli election in which Netanyahu&#x27;s coalition may lose its majority.</p>
+      <div class="src">Al Jazeera English · <a href="https://www.aljazeera.com/news/2026/10/20/hegseth-meets-netanyahu-in-unannounced-israel-visit" rel="noopener">Read the full story →</a></div>
     </article>
     <article id="p5">
-      <h3>Gulf states condemn Houthi attacks on Saudi Arabia as Yemen fighting grows</h3>
-      <p>The GCC says an attack on one member affects all six; over 233,000 people are displaced in Yemen.</p>
-      <div class="src">Al Jazeera English · <a href="https://www.aljazeera.com/news/2026/10/18/gcc-condemns-houthi-attacks-on-saudi-arabia-as-yemen-fighting-intensifies" rel="noopener">Read the full story →</a></div>
+      <h3>Israel arrests 10 over West Bank settler attacks</h3>
+      <p>The suspects are accused of attacks on Palestinians, a US photojournalist and European diplomats; the US ambassador called it positive.</p>
+      <div class="src">CBS News · <a href="https://www.cbsnews.com/news/us-israel-west-bank-settler-violence-palestinians-arrests/" rel="noopener">Read the full story →</a></div>
+    </article>
+    <article id="p6">
+      <h3>Trump&#x27;s approval falls to a record-low 31% in new poll</h3>
+      <p>The Reuters/Ipsos survey puts Democrats 12 points ahead on the generic ballot before the November 3 midterms.</p>
+      <div class="src">Al Jazeera English · <a href="https://www.aljazeera.com/news/2026/10/19/trump-approval-hits-record-low-31-percent-polls-show-republican-struggles" rel="noopener">Read the full story →</a></div>
     </article>
   </section>
 
   <section id="more">
     <h2>Also in the news</h2>
     <ul class="more-list">
-      <li><a href="https://arxiv.org/abs/2610.18861" rel="noopener">Hacker News: new paper on agents that reason in latent space and act through text</a></li>
-      <li><a href="https://www.nytimes.com/2026/10/16/us/math-ai-terence-tao.html" rel="noopener">Terry Tao says AI has put mathematics in crisis, New York Times reports</a></li>
-      <li><a href="https://venturebeat.com/technology/nvidias-new-open-nemotron-3-5-super-vl-with-post-training-beats-claude-opus-5-gpt-6-1-sol-on-specialized-task-benchmarks" rel="noopener">Nvidia&#x27;s open Nemotron 3.5 Super VL tops rivals on specialised benchmarks</a></li>
-      <li><a href="https://venturebeat.com/technology/black-forest-labs-opens-flux-3-image-klein-weights-with-free-commercial-use-limited-to-smaller-businesses" rel="noopener">Black Forest Labs opens FLUX 3 Image Klein weights</a></li>
-      <li><a href="https://www.theregister.com/networks/2026/10/19/time-lords-kill-leap-seconds-before-they-become-the-new-y2k-bug/5303711" rel="noopener">Time standards body moves to end leap seconds</a></li>
-      <li><a href="https://www.theregister.com/software/2026/10/16/british-watchdog-seeks-tougher-terms-around-microsofts-dominance-of-business-software/5303520" rel="noopener">British watchdog seeks tougher terms on Microsoft&#x27;s business software dominance</a></li>
-      <li><a href="https://www.theregister.com/personal-tech/2026/10/17/amazon-wants-you-to-bee-lieve-wearable-ai-can-recall-it-all-for-you/5303569" rel="noopener">Amazon pitches Bee wearable AI that recalls everything for you</a></li>
-      <li><a href="https://gizmodo.com/cop-fired-for-letting-her-ice-agent-husband-use-her-flock-login-2000827428" rel="noopener">Police officer fired for letting ICE agent husband use her Flock login</a></li>
-      <li><a href="https://gizmodo.com/ai-generated-content-can-plant-fake-memories-researchers-say-2000826459" rel="noopener">Researchers say AI-generated content can plant false memories</a></li>
-      <li><a href="https://abcnews.com/International/ukraine-targets-russia-1000-drones-striking-oil-terminal/story?id=137358203" rel="noopener">Ukraine launches more than 1,000 drones at Russia, hitting an oil terminal</a></li>
+      <li><a href="https://techcrunch.com/2026/10/19/nscale-and-anthropic-are-reportedly-in-talks-for-yet-another-45-billion-compute-deal/" rel="noopener">Nscale and Anthropic reportedly in talks on another $45B compute deal</a></li>
+      <li><a href="https://techcrunch.com/2026/10/19/ai-assistant-startup-town-nabs-unicorn-valuation-four-months-after-launch/" rel="noopener">AI assistant startup Town reaches unicorn valuation four months after launch</a></li>
+      <li><a href="https://www.engadget.com/2290313/tp-link-moves-to-assemble-routers-in-the-us-following-an-import-ban/" rel="noopener">TP-Link plans to assemble routers in the US after import ban</a></li>
+      <li><a href="https://techcrunch.com/2026/10/19/tenstorrent-hits-6-2b-valuation-to-scale-open-weight-ai-chips/" rel="noopener">Tenstorrent hits $6.2B valuation to scale open-weight AI chips</a></li>
+      <li><a href="https://www.nbcnews.com/world/middle-east/houthi-rebels-strike-yemen-government-forces-killing-least-53-rcna604508" rel="noopener">Houthi missile strike on a Yemeni army camp kills at least 53</a></li>
+      <li><a href="https://www.france24.com/en/middle-east/20261019-world-food-programme-to-end-aid-for-half-a-million-in-gaza-due-to-funding-shortfall" rel="noopener">World Food Programme to end aid for half a million people in Gaza</a></li>
+      <li><a href="https://www.aljazeera.com/news/2026/10/20/saudi-arabia-cancels-2026-davos-in-the-desert-amid-houthi-attacks" rel="noopener">Saudi Arabia cancels its 2026 &#x27;Davos in the Desert&#x27; amid Houthi attacks</a></li>
+      <li><a href="https://www.aljazeera.com/news/2026/10/19/mahmoud-khalil-takes-deportation-fight-to-the-us-supreme-court" rel="noopener">Mahmoud Khalil takes his deportation fight to the US Supreme Court</a></li>
+      <li><a href="https://www.france24.com/en/americas/20261019-brazil-court-orders-meta-prove-gives-lula-bolsonaro-campaign-content-equal-treatment" rel="noopener">Brazil court orders Meta to prove equal treatment of Lula and Bolsonaro content</a></li>
     </ul>
   </section>
 
   <footer>
     <h2>Archive</h2>
     <ul>
+      <li><a href="archive/2026-10-20.html">Tuesday, 20 October 2026</a></li>
       <li><a href="archive/2026-10-19.html">Monday, 19 October 2026</a></li>
       <li><a href="archive/2026-10-18.html">Sunday, 18 October 2026</a></li>
       <li><a href="archive/2026-10-17.html">Saturday, 17 October 2026</a></li>
